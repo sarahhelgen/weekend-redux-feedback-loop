@@ -66,12 +66,12 @@ Create routes with corresponding components:
     [ ] on click also resets the form
 
  Reducers 
- - feelingData
- - understandingData
- - supportData
- - commentsData
-
-
+ - feelingReducer
+ - understandingReducer
+ - supportReducer
+ - commentsReducer
+ 
+- useHistory to push from one view to the next
 
 
  Server Side Route:
