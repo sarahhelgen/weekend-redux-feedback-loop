@@ -19,7 +19,7 @@ const feelingToAdd = (state = defaultFeeling, action) => {
 //creating the store:
 const reduxStore = createStore(
     combineReducers({
-        //reducers go here  
+        feelingToAdd,  
     }),
     applyMiddleware(logger)
 );
