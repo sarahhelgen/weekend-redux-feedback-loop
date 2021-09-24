@@ -22,7 +22,7 @@ TO DO LIST:
 
 Create routes with corresponding components:
 
-[ ] How are you feeling today? /feeling
+[ ] How are you feeling today? / (home)
 
     form: 
        [ ] input: feeling (rank 1 -5 )
