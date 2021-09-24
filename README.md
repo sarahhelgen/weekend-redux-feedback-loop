@@ -22,41 +22,59 @@ TO DO LIST:
 
 Create routes with corresponding components:
 
-[ ] How are you feeling today? / (home)
+[x] How are you feeling today? / (home)
 
     form: 
        [ ] input: feeling (rank 1 -5 )
        [ ] button: Next (on click captures the data and brings the user    to the next page)
        [ ] needs input validation so that a user must submit something - add an alert for this as well
+       [DISPATCH]
 
-[ ] How well are you understanding the content? /understanding
+[x] How well are you understanding the content? /understanding
 
     form:
       [ ]   input: understanding (rank 1 -5 )
       [ ]   button: Next (on click captures data and brings user to the next page)
        [ ]  needs input validation so that a user must submit something - add an alert for this as well
+       DISPATCH
 
-[ ] How well are you being supported? /support
+[x] How well are you being supported? /support
 
     form:
       [ ]   input: supported (rank 1 - 5)
       [ ]   button: Next (on click captures data and brings user to the next page)
       [ ]   needs input validation so that a user must submit something - add an alert for this as well
+      DISPATCH
 
-[ ] Any comments you would like to leave? /comments
+[x] Any comments you would like to leave? /comments
 
     form
       [ ]   input: text 
       [ ]    button: Next (on click captures data and brings user to next    page)
       [ ]   needs input validation so that a user must submit something - add an alert for this as well
+      DISPATCH
 
-[ ] Review your feedback: /feedback
+[x] Review your feedback: /feedback
 
     [] Feelings, Understanding, Support, Comments - display all previous responses 
-        - useSelector
+        - USE SELECTOR
     [] Submit button - save submission and send to database
 
- [ ] Thank you: /thank you
+ [x] Thank you: /thank you
 
     [ ] leave new feedback button - on click, sends you back to /feeling
     [ ] on click also resets the form
+
+ Reducers 
+ - feelingData
+ - understandingData
+ - supportData
+ - commentsData
+
+
+
+
+ Server Side Route:
+
+/feedback
+[] POST: need DB query
