@@ -77,4 +77,4 @@ Create routes with corresponding components:
  Server Side Route:
 
 /feedback
-[] POST: need DB query
+[x] POST: need DB query
