@@ -5,12 +5,12 @@ import {useHistory} from 'react-router-dom'
 
 function Comments () {
 
-    const dispatch = useDispatch();
+    const dispatch = useDispatch(); //need dispatch to send data to reduxStore
     const history = useHistory();
-    const [comments, setComments ] = useState('');
+    const [comments, setComments ] = useState(''); //used local state to dispatch and capture inputs
 
     const handleSubmit = (event) => {
-        event.preventDefault();
+        event.preventDefault(); //needed when using form
         console.log( 'in handleSubmit - adding comments');
         dispatch({
             type: 'SET_COMMENTS',

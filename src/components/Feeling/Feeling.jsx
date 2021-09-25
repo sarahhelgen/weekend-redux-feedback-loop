@@ -11,8 +11,8 @@ function Feeling() {
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log('in handleSubmit - adding feeling info', feeling);
-        if (feeling === '') {
-            alert('You must rate how you are feeling!');
+        if (feeling > 5 || feeling < 1 || feeling === '') {
+            alert('You must rate your feeling between 1 and 5!');
         }
         dispatch({
             type: 'SET_FEELING',

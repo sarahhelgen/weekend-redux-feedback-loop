@@ -11,8 +11,8 @@ function Support () {
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log('in handleSubmit - adding support');
-        if(support === ''){
-            alert('You must rate how supported you feel!');
+        if (support > 5 || support < 1 || support === '') {
+            alert('You must rate how supported you are feeling between 1 and 5!');
         }
         dispatch({
             type: 'SET_SUPPORT',

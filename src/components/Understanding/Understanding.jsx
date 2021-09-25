@@ -11,8 +11,8 @@ function Understanding() {
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log('in handleSubmit - adding understanding info');
-        if (understanding === '') {
-            alert('You must rate your understanding!');
+        if (understanding > 5 || understanding < 1 || understanding === '') {
+            alert('You must rate your understanding between 1 and 5!');
         }
         dispatch({
             type: 'SET_UNDERSTANDING',
