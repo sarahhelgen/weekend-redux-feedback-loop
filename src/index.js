@@ -32,6 +32,14 @@ const supportReducer = (state = defaultSupport, action ) => {
     return state;
 }
 
+const defaultComments = '';
+const commentsReducer = (state = defaultComments, action) => {
+    if(action.type === 'SET_COMMENTS') {
+        return action.payload;
+    }
+    return state;
+}
+
 
 
 //creating the store:
@@ -40,6 +48,7 @@ const reduxStore = createStore(
         feelingReducer,
         understandingReducer,
         supportReducer,
+        commentsReducer,
     }),
     applyMiddleware(logger)
 );
