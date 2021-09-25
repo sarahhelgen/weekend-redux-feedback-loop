@@ -13,7 +13,7 @@ TO DO LIST:
 
 [x] npm installs
 [x] create db in postico
-[ ] create drawing/visual of the app
+[x] create drawing/visual of the app
 [x] boilerplate in index.js
     [x] createStore
     [x] combineReducers
@@ -25,16 +25,16 @@ Create routes with corresponding components:
 [x] How are you feeling today? / (home)
 
     form: 
-       [ ] input: feeling (rank 1 -5 )
-       [ ] button: Next (on click captures the data and brings the user    to the next page)
+       [x] input: feeling (rank 1 -5 )
+       [x] button: Next (on click captures the data and brings the user    to the next page)
        [ ] needs input validation so that a user must submit something - add an alert for this as well
-       [DISPATCH]
+       [x] dispatch
 
 [x] How well are you understanding the content? /understanding
 
     form:
-      [ ]   input: understanding (rank 1 -5 )
-      [ ]   button: Next (on click captures data and brings user to the next page)
+      [x]   input: understanding (rank 1 -5 )
+      [x]   button: Next (on click captures data and brings user to the next page)
        [ ]  needs input validation so that a user must submit something - add an alert for this as well
        DISPATCH
 
@@ -78,3 +78,11 @@ Create routes with corresponding components:
 
 /feedback
 [x] POST: need DB query
+
+[ ] update README
+
+[ ] add code comments
+
+[ ] add some material ui
+
+

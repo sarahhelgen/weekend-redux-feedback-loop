@@ -9,17 +9,28 @@ import logger from 'redux-logger';
 
 //reducers go here
 const defaultFeeling = '';
-const feelingToAdd = (state = defaultFeeling, action) => {
-    if (action.type === 'SET_NEW_FEELING') {
+const feelingReducer = (state = defaultFeeling, action) => {
+    if (action.type === 'SET_FEELING') {
         return action.payload;
     }
     return state;
 }
 
+const defaultUnderstanding = '',
+const understandingReducer = (state = defaultUnderstanding, action) => {
+    if (action.type === 'SET_UNDERSTANDING') {
+        return action.payload;
+    }
+    return state;
+}
+
+
+
 //creating the store:
 const reduxStore = createStore(
     combineReducers({
-        feelingToAdd,  
+        feelingReducer,
+        understandingReducer,
     }),
     applyMiddleware(logger)
 );
