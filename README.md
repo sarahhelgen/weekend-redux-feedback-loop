@@ -56,14 +56,14 @@ Create routes with corresponding components:
 
 [x] Review your feedback: /feedback
 
-    [] Feelings, Understanding, Support, Comments - display all previous responses 
-        - USE SELECTOR
-    [] Submit button - save submission and send to database
+    [x] Feelings, Understanding, Support, Comments - display all previous responses 
+    [x]USE SELECTOR
+    [x] Submit button - save submission and send to database
 
  [x] Thank you: /thank you
 
-    [ ] leave new feedback button - on click, sends you back to /feeling
-    [ ] on click also resets the form
+    [x] leave new feedback button - on click, sends you back to /feeling
+    [x] on click also resets the form
 
  Reducers 
  - feelingReducer
