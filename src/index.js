@@ -24,6 +24,14 @@ const understandingReducer = (state = defaultUnderstanding, action) => {
     return state;
 }
 
+const defaultSupport = '';
+const supportReducer = (state = defaultSupport, action ) => {
+    if(action.type === 'SET_SUPPORT') {
+        return action.payload;
+    }
+    return state;
+}
+
 
 
 //creating the store:
@@ -31,6 +39,7 @@ const reduxStore = createStore(
     combineReducers({
         feelingReducer,
         understandingReducer,
+        supportReducer,
     }),
     applyMiddleware(logger)
 );
