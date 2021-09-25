@@ -25,8 +25,8 @@ const understandingReducer = (state = defaultUnderstanding, action) => {
 }
 
 const defaultSupport = '';
-const supportReducer = (state = defaultSupport, action ) => {
-    if(action.type === 'SET_SUPPORT') {
+const supportReducer = (state = defaultSupport, action) => {
+    if (action.type === 'SET_SUPPORT') {
         return action.payload;
     }
     return state;
@@ -34,7 +34,7 @@ const supportReducer = (state = defaultSupport, action ) => {
 
 const defaultComments = '';
 const commentsReducer = (state = defaultComments, action) => {
-    if(action.type === 'SET_COMMENTS') {
+    if (action.type === 'SET_COMMENTS') {
         return action.payload;
     }
     return state;

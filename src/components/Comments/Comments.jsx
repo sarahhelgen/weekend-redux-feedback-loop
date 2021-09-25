@@ -9,14 +9,26 @@ function Comments () {
     const history = useHistory();
     const [comments, setComments ] = useState('');
 
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        console.log( 'in handleSubmit - adding comments');
+        dispatch({
+            type: 'SET_COMMENTS',
+            payload: comments,
+        });
+        history.push('/review');
+
+    }
+
 
     return(
         <>
         <h2>Any comments you want to share?</h2>
-        <form>
+        <form onSubmit={handleSubmit}>
             <p>Comments:</p>
-            <input placeholder="comments" type="text"/>
-            <button>Next</button>
+            <input placeholder="comments" type="text" value={comments}
+            onChange={(event) => setComments(event.target.value)}/>
+            <button type="submit">Next</button>
         </form>
         </>
 
