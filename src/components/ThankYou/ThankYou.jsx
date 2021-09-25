@@ -1,10 +1,13 @@
+import {useHistory} from 'react-router-dom';
 
 function ThankYou () {
+
+    const history = useHistory();
 
     return(
         <>
         <p>Thank You!</p>
-        <button>Leave new feedback</button>
+        <button onClick={()=>history.push('/')}>Leave new feedback</button>
         </>
 
     )
