@@ -49,10 +49,10 @@ Create routes with corresponding components:
 [x] Any comments you would like to leave? /comments
 
     form
-      [ ]   input: text 
-      [ ]    button: Next (on click captures data and brings user to next    page)
+      [x ]   input: text 
+      [x ]    button: Next (on click captures data and brings user to next    page)
       [ ]   needs input validation so that a user must submit something - add an alert for this as well
-     [] DISPATCH
+     [x] DISPATCH
 
 [x] Review your feedback: /feedback
 
