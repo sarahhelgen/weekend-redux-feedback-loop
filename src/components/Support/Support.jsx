@@ -8,13 +8,27 @@ function Support () {
     const history = useHistory();
     const [support, setSupport] = useState('');
 
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        console.log('in handleSubmit - adding support');
+        if(support === ''){
+            alert('You must rate how supported you feel!');
+        }
+        dispatch({
+            type: 'SET_SUPPORT',
+            payload: support,
+        });
+        history.push('/comments');
+    }
+
     return(
         <>
             <h2>How are you feeling supported today?</h2>
-        <form>
+        <form onSubmit={handleSubmit}>
             <p>Support (rank 1 - 5):</p>
-            <input placeholder="support"/>
-            <button>Next</button>
+            <input type="number" placeholder="support" value={support}
+            onChange={(event) => setSupport(event.target.value)}/>
+            <button type="submit">Next</button>
         </form>
 
         </>
