@@ -16,7 +16,7 @@ const feelingReducer = (state = defaultFeeling, action) => {
     return state;
 }
 
-const defaultUnderstanding = '',
+const defaultUnderstanding = '';
 const understandingReducer = (state = defaultUnderstanding, action) => {
     if (action.type === 'SET_UNDERSTANDING') {
         return action.payload;

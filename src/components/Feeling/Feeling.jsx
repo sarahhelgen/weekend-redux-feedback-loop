@@ -27,7 +27,7 @@ function Feeling() {
             <form onSubmit={handleSubmit}>
                 <p>Feeling:</p>
                 <input type="number" onChange={(event) => setFeeling(event.target.value)} placeholder="feeling" value={feeling} />
-                <button>Next</button>
+                <button type="submit">Next</button>
             </form>
         </>
     )
