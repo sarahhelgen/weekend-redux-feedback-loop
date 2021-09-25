@@ -20,7 +20,7 @@ function Review() {
                 comments: commentsReducer,
             }
         }).then(response => {
-            history.push('/');
+            history.push('/thankyou');
         }).catch(error => {
             console.log('Error with POST to db', error);
         });
@@ -32,7 +32,7 @@ function Review() {
 
         <>
 
-            {JSON.stringify(reduxStore)}
+            {/* {JSON.stringify(reduxStore)} */}
             <p>Feelings: {feelingReducer} </p>
             <p>Understanding: {understandingReducer} </p>
             <p>Support: {supportReducer}</p>
