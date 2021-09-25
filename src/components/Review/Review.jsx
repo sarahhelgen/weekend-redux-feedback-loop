@@ -14,10 +14,10 @@ function Review() {
             method: 'POST',
             url: '/feedback',
             data: {
-                feeling: feelingReducer.feeling,
-                understanding: understandingReducer.understanding,
-                support: supportReducer.support,
-                comments: commentsReducer.comments,
+                feeling: feelingReducer,
+                understanding: understandingReducer,
+                support: supportReducer,
+                comments: commentsReducer,
             }
         }).then(response => {
             history.push('/');
@@ -33,10 +33,10 @@ function Review() {
         <>
 
             {JSON.stringify(reduxStore)}
-            <p>Feelings: {feelingReducer.feeling} </p>
-            <p>Understanding: {understandingReducer.understanding} </p>
-            <p>Support: {supportReducer.support}</p>
-            <p>Comments: {commentsReducer.comments} </p>
+            <p>Feelings: {feelingReducer} </p>
+            <p>Understanding: {understandingReducer} </p>
+            <p>Support: {supportReducer}</p>
+            <p>Comments: {commentsReducer} </p>
             <button onClick={handleSubmit}>Submit</button>
         </>
 
