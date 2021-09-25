@@ -36,15 +36,15 @@ Create routes with corresponding components:
       [x]   input: understanding (rank 1 -5 )
       [x]   button: Next (on click captures data and brings user to the next page)
        [ ]  needs input validation so that a user must submit something - add an alert for this as well
-       DISPATCH
+     [x]  DISPATCH
 
 [x] How well are you being supported? /support
 
     form:
-      [ ]   input: supported (rank 1 - 5)
-      [ ]   button: Next (on click captures data and brings user to the next page)
+      [x]   input: supported (rank 1 - 5)
+      [x]   button: Next (on click captures data and brings user to the next page)
       [ ]   needs input validation so that a user must submit something - add an alert for this as well
-      DISPATCH
+    [x]  DISPATCH
 
 [x] Any comments you would like to leave? /comments
 
@@ -52,7 +52,7 @@ Create routes with corresponding components:
       [ ]   input: text 
       [ ]    button: Next (on click captures data and brings user to next    page)
       [ ]   needs input validation so that a user must submit something - add an alert for this as well
-      DISPATCH
+     [] DISPATCH
 
 [x] Review your feedback: /feedback
 
