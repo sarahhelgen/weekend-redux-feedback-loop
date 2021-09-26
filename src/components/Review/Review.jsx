@@ -8,6 +8,9 @@ function Review() {
     const { feelingReducer, understandingReducer, supportReducer, commentsReducer } = reduxStore;
     const history = useHistory();
 
+//this function uses selector to pull all the data that was sent to store in previous pages
+//and display it on the DOM and then sends it via POST to the db on click of submit button
+
     const handleSubmit = () => {
         console.log('in handleSubmit - POST to db');
         axios({

@@ -9,6 +9,8 @@ function Comments () {
     const history = useHistory();
     const [comments, setComments ] = useState(''); //used local state to dispatch and capture inputs
 
+     //this function captures user inputs and uses dispatch to send the data via dispatch to store
+    
     const handleSubmit = (event) => {
         event.preventDefault(); //needed when using form
         console.log( 'in handleSubmit - adding comments');
@@ -16,7 +18,7 @@ function Comments () {
             type: 'SET_COMMENTS',
             payload: comments,
         });
-        history.push('/review');
+        history.push('/review'); //once user has entered a ranking, moves to the next page of the form
 
     }
 

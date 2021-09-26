@@ -10,8 +10,11 @@ function Feeling() {
     const [feeling, setFeeling] = useState('');
     const history = useHistory();
 
+    //this function capture user inputs and uses dispatch to send the data via dispatch to store
+    //once user has entered a ranking, moves to the next page of the form
     const handleSubmit = (event) => {
-        event.preventDefault();
+        event.preventDefault(); //needed for form
+        //alert that user must chose a ranking 
         console.log('in handleSubmit - adding feeling info', feeling);
         if (feeling > 5 || feeling < 1 || feeling === '') {
             alert('You must rate your feeling between 1 and 5!');

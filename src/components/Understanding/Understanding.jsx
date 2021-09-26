@@ -6,8 +6,10 @@ function Understanding() {
 
     const dispatch = useDispatch();
     const history = useHistory();
-    const [understanding, setUnderstanding] = useState('');
+    const [understanding, setUnderstanding] = useState(''); //need to use local state to capture user input
 
+    //this function captures user inputs and uses dispatch to send the data via dispatch to store
+    //once user has entered a ranking, moves to the next page of the form
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log('in handleSubmit - adding understanding info');

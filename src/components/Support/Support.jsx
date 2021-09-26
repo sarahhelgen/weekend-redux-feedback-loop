@@ -6,8 +6,10 @@ function Support () {
 
     const dispatch = useDispatch();
     const history = useHistory();
-    const [support, setSupport] = useState('');
+    const [support, setSupport] = useState(''); //need to use local state to capture user input
 
+     //this function capture user inputs and uses dispatch to send the data via dispatch to store
+    //once user has entered a ranking, moves to the next page of the form
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log('in handleSubmit - adding support');
@@ -18,7 +20,7 @@ function Support () {
             type: 'SET_SUPPORT',
             payload: support,
         });
-        history.push('/comments');
+        history.push('/comments'); //sends user to next page in form
     }
 
     return(
