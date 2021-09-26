@@ -33,6 +33,7 @@ function Review() {
         <>
 
             {/* {JSON.stringify(reduxStore)} */}
+            <h3>Please review your answers and submit:</h3>
             <p>Feelings: {feelingReducer} </p>
             <p>Understanding: {understandingReducer} </p>
             <p>Support: {supportReducer}</p>

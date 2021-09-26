@@ -26,7 +26,7 @@ function Understanding() {
         <>
             <h2>How well are you understanding the content?</h2>
             <form onSubmit={handleSubmit}>
-                <p>Understanding:</p>
+                <p>Understanding: Please rank your understanding from 1 - 5</p>
                 <input type="number" value={understanding} placeholder="understanding"
                     onChange={(event) => setUnderstanding(event.target.value)} />
                 <button type="submit">Next</button>

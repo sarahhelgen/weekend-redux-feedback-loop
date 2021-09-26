@@ -1,6 +1,8 @@
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
-import { useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom';
+
+
 
 function Feeling() {
 
@@ -25,7 +27,7 @@ function Feeling() {
         <>
             <h2>How are you feeling today?</h2>
             <form onSubmit={handleSubmit}>
-                <p>Feeling:</p>
+                <p>Feeling: Please rank how you are feeling from 1 - 5</p>
                 <input type="number" onChange={(event) => setFeeling(event.target.value)} placeholder="feeling" value={feeling} />
                 <button type="submit">Next</button>
             </form>
