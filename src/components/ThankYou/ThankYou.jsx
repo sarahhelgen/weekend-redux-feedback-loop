@@ -7,7 +7,7 @@ function ThankYou () {
     //lets the user leave a new set of feedback
     return(
         <>
-        <p>Thank You!</p>
+        <h2>Thank You!</h2>
         <button onClick={()=>history.push('/')}>Leave new feedback</button>
         </>
 
