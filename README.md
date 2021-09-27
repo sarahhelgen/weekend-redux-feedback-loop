@@ -19,6 +19,8 @@ Created a feedback form to see how students at Prime Digital Academy are feeling
 - [x] sent feedback to database via axios POST on click of submit button
 - [x] thank you page displays after submit button is clicked, inputs are cleared, and user is given the option to fill out feedback for a different day.
 
+The deployed app can be found here: https://cryptic-spire-67868.herokuapp.com/#/
+
 
 ## Built with:
 
