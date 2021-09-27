@@ -4,6 +4,7 @@ import { useHistory } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 
+
 function Feeling() {
 
     const dispatch = useDispatch();
@@ -18,7 +19,6 @@ function Feeling() {
         //alert that user must chose a ranking 
         console.log('in handleSubmit - adding feeling info', feeling);
         if (feeling > 5 || feeling < 1 || feeling === '') {
-            alert('You must rate your feeling between 1 and 5!');
             return;
         }
 
