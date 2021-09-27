@@ -18,10 +18,10 @@ function Feeling() {
         event.preventDefault(); //needed for form
         //alert that user must chose a ranking 
         console.log('in handleSubmit - adding feeling info', feeling);
-        if (feeling > 5 || feeling < 1 || feeling === '') {
+        if (feeling > 5 || feeling < 1 || feeling  === '') {
+            alert('You must rate you are feeling between 1 and 5!');
             return;
         }
-
         dispatch({
             type: 'SET_FEELING',
             payload: feeling,
