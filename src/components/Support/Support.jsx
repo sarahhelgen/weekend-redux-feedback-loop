@@ -1,6 +1,8 @@
 import {useDispatch} from 'react-redux';
 import {useState} from 'react';
 import {useHistory} from 'react-router-dom';
+import Button from '@mui/material/Button';
+import TextField from '@mui/material/TextField';
 
 function Support () {
 
@@ -29,9 +31,8 @@ function Support () {
             <h2>How are you feeling supported today?</h2>
         <form onSubmit={handleSubmit}>
             <p>Support: Please rank how well you are feeling supported from 1 - 5</p>
-            <input type="number" placeholder="support" value={support}
-            onChange={(event) => setSupport(event.target.value)}/>
-            <button type="submit">Next</button>
+            <TextField type="number" onChange={(event) => setSupport(event.target.value)} placeholder="support" value={support} id="standard-basic" label="Support" variant="standard" />
+            <Button style={{backgroundColor: '#432534', color: '#FFFFFF'}} variant="contained" type="submit">Next</Button>
         </form>
 
         </>

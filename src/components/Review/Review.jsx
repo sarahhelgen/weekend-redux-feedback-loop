@@ -1,6 +1,7 @@
 import { useSelector } from 'react-redux';
 import axios from 'axios';
 import { useHistory } from 'react-router-dom';
+import Button from '@mui/material/Button';
 
 function Review() {
 
@@ -41,7 +42,7 @@ function Review() {
             <p>Understanding: {understandingReducer} </p>
             <p>Support: {supportReducer}</p>
             <p>Comments: {commentsReducer} </p>
-            <button onClick={handleSubmit}>Submit</button>
+            <Button style={{backgroundColor: '#04151f', color: '#FFFFFF'}} variant="contained" type="submit" onClick={handleSubmit}>Submit</Button>
         </>
 
     )

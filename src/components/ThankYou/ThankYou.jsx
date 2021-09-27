@@ -1,5 +1,6 @@
 import {useHistory} from 'react-router-dom';
 import {useDispatch} from 'react-redux';
+import Button from '@mui/material/Button';
 
 function ThankYou () {
 
@@ -12,14 +13,12 @@ function ThankYou () {
             const action = {type: 'CLEAR_INPUTS'}
             dispatch(action);
             history.push('/');
-
         }
     return(
         <>
         <h2>Thank You!</h2>
-        <button onClick={clearInputs}>Leave new feedback</button>
+        <Button variant="contained" style={{backgroundColor: '#432534', color: '#FFFFFF'}} onClick={clearInputs}>Leave new feedback</Button>
         </>
-
     )
 }
 

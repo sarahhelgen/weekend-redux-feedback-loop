@@ -1,6 +1,8 @@
 import {useDispatch} from 'react-redux';
 import {useState} from 'react';
-import {useHistory} from 'react-router-dom'
+import {useHistory} from 'react-router-dom';
+import Button from '@mui/material/Button';
+import TextField from '@mui/material/TextField';
 
 
 function Comments () {
@@ -28,9 +30,8 @@ function Comments () {
         <h2>Any comments you want to share?</h2>
         <form onSubmit={handleSubmit}>
             <p>Comments:</p>
-            <input placeholder="comments" type="text" value={comments}
-            onChange={(event) => setComments(event.target.value)}/>
-            <button type="submit">Next</button>
+            <TextField type="text" onChange={(event) => setComments(event.target.value)} placeholder="support" value={comments} id="standard-basic" label="Comments" variant="standard" />
+            <Button style={{backgroundColor: '#c44900', color: '#FFFFFF'}} variant="contained" type="submit">Next</Button>
         </form>
         </>
 
