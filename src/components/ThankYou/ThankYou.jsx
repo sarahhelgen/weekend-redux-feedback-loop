@@ -12,14 +12,12 @@ function ThankYou () {
             const action = {type: 'CLEAR_INPUTS'}
             dispatch(action);
             history.push('/');
-
         }
     return(
         <>
         <h2>Thank You!</h2>
         <button onClick={clearInputs}>Leave new feedback</button>
         </>
-
     )
 }
 

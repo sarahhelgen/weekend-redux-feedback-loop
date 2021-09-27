@@ -1,14 +1,15 @@
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 import { useHistory } from 'react-router-dom';
-
-
+import Button from '@mui/material/Button';
+import TextField from '@mui/material/TextField';
 
 function Feeling() {
 
     const dispatch = useDispatch();
     const [feeling, setFeeling] = useState('');
     const history = useHistory();
+    
 
     //this function capture user inputs and uses dispatch to send the data via dispatch to store
     //once user has entered a ranking, moves to the next page of the form
@@ -20,7 +21,7 @@ function Feeling() {
             alert('You must rate your feeling between 1 and 5!');
             return;
         }
-        
+
         dispatch({
             type: 'SET_FEELING',
             payload: feeling,
@@ -33,8 +34,9 @@ function Feeling() {
             <h2>How are you feeling today?</h2>
             <form onSubmit={handleSubmit}>
                 <p>Feeling: Please rank how you are feeling from 1 - 5</p>
-                <input type="number" onChange={(event) => setFeeling(event.target.value)} placeholder="feeling" value={feeling} />
-                <button type="submit">Next</button>
+                {/* <input type="number" onChange={(event) => setFeeling(event.target.value)} placeholder="feeling" value={feeling} /> */}
+                <TextField type="number" onChange={(event) => setFeeling(event.target.value)} placeholder="feeling" value={feeling} id="standard-basic" label="Feeling" variant="standard" />
+                <Button style={{backgroundColor: '#432534', color: '#FFFFFF'}} variant="contained" type="submit">Next</Button>
             </form>
         </>
     )
