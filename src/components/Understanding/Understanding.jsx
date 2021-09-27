@@ -15,6 +15,7 @@ function Understanding() {
         console.log('in handleSubmit - adding understanding info');
         if (understanding > 5 || understanding < 1 || understanding === '') {
             alert('You must rate your understanding between 1 and 5!');
+            return;
         }
         dispatch({
             type: 'SET_UNDERSTANDING',

@@ -15,6 +15,7 @@ function Support () {
         console.log('in handleSubmit - adding support');
         if (support > 5 || support < 1 || support === '') {
             alert('You must rate how supported you are feeling between 1 and 5!');
+            return;
         }
         dispatch({
             type: 'SET_SUPPORT',
