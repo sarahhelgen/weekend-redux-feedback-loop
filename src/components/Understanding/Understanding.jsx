@@ -1,6 +1,8 @@
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import Button from '@mui/material/Button';
+import TextField from '@mui/material/TextField';
 
 function Understanding() {
 
@@ -30,9 +32,8 @@ function Understanding() {
             <h2>How well are you understanding the content?</h2>
             <form onSubmit={handleSubmit}>
                 <p>Understanding: Please rank your understanding from 1 - 5</p>
-                <input type="number" value={understanding} placeholder="understanding"
-                    onChange={(event) => setUnderstanding(event.target.value)} />
-                <button type="submit">Next</button>
+                <TextField type="number" onChange={(event) => setUnderstanding(event.target.value)} placeholder="understanding" value={understanding} id="standard-basic" label="Understanding" variant="standard" />
+                <Button style={{backgroundColor: '#c44900', color: '#FFFFFF'}} variant="contained" type="submit">Next</Button>
             </form>
         </>
     )
