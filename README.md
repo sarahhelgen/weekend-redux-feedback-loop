@@ -6,7 +6,7 @@
 
 Duration: 2 day sprint
 
-Created a feedback form to see how students at Prime Digital Academy are feeling about their experience. Feedback is collected over 4 views and then a fifth review page that displays their fedback and has a submit button that sends the feedback to the database. I created to following to-do list beforehand to track my progress and ensure all features were completed:
+Created a full stackfeedback form in React to see how students at Prime Digital Academy are feeling about their experience. Feedback is collected over 4 views and then a fifth review page that displays their fedback and has a submit button that sends the feedback to the database. I created to following to-do list beforehand to track my progress and ensure all features were completed:
 
 - [x] npm installs
 - [x] created database in Postico
@@ -21,6 +21,15 @@ Created a feedback form to see how students at Prime Digital Academy are feeling
 
 The deployed app can be found here: https://cryptic-spire-67868.herokuapp.com/#/
 
+## Installation
+
+1. Create a database named 'prime_feedback'
+2. The queries in the 'database.sql' file are all set up for you. This project was built in Postgres, so you will need to have that installed and I'd recommed using Postico to run queries, as that is what I used to test my data.
+3. Open your code editor and run an `npm install` in your terminal
+4. Run `npm run client` and `npm run server`
+5. Open on `localhost:3000`
+
+
 
 ## Built with:
 
@@ -30,5 +39,15 @@ The deployed app can be found here: https://cryptic-spire-67868.herokuapp.com/#/
   - Node.js
   - Axios
   - Express
+  - PG
+  - Material UI
+
+  ## Acknowledgement
+
+Thanks to my instructors Chris, Liz, Dane, and Kris and everyone at Prime Digital Academy for helping me learn the technical skills to build this!
+
+## Support
+
+If you have feedback or issues with the app, please reach out to me at sarah.helgen@gmail.com
 
 
