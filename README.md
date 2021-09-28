@@ -1,5 +1,4 @@
 
-
 # Redux Feedback Loop
 
 ## Description
@@ -27,9 +26,11 @@ The deployed app can be found here: https://cryptic-spire-67868.herokuapp.com/#/
 2. The queries in the 'database.sql' file are all set up for you. This project was built in Postgres, so you will need to have that installed and I'd recommed using Postico to run queries, as that is what I used to test my data.
 3. Open your code editor and run an `npm install` in your terminal
 4. Run `npm run client` and `npm run server`
-5. Open on `localhost:3000`
+5. Open on `localhost:3000`, server is on `localhost:5000`
 
-
+## Screen Shots
+![app image](./images/screenshot1.png)
+![app image](./images/screenshot2.png)
 
 ## Built with:
 
@@ -42,7 +43,7 @@ The deployed app can be found here: https://cryptic-spire-67868.herokuapp.com/#/
   - PG
   - Material UI
 
-  ## Acknowledgement
+## Acknowledgement
 
 Thanks to my instructors Chris, Liz, Dane, and Kris and everyone at Prime Digital Academy for helping me learn the technical skills to build this!
 
